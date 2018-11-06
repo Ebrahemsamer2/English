@@ -54,38 +54,38 @@
 
 	// Add Custom Post Type
 	
-	function add_custom_post_type() {
+	// function add_custom_post_type() {
 
-		$labels = array(
-			'name' => __('Lessons'),
-			'singular_name' => __('Lesson'),
-			'add_new' => __('New Lesson'),
-			'add_new_item' => __('Add New Lesson'),
-			'edit_item' => __('Edit Lesson'),
-			'new_item'  => __('New Lesson'),
-			'view_item' => __('View Lesson'),
-			'search_items' => __('Search Lessons'),
-			'not_found' => __('Lesson Not Found'),
-			'not_found_in_trash' => __('Lesson not in trash')
-		);
+	// 	$labels = array(
+	// 		'name' => __('Lessons'),
+	// 		'singular_name' => __('Lesson'),
+	// 		'add_new' => __('New Lesson'),
+	// 		'add_new_item' => __('Add New Lesson'),
+	// 		'edit_item' => __('Edit Lesson'),
+	// 		'new_item'  => __('New Lesson'),
+	// 		'view_item' => __('View Lesson'),
+	// 		'search_items' => __('Search Lessons'),
+	// 		'not_found' => __('Lesson Not Found'),
+	// 		'not_found_in_trash' => __('Lesson not in trash')
+	// 	);
 
-		$args = array(
-			'labels' => $labels,
-			'has_archive' => true,
-			'public' => true,
-			'hierarchical' => false,
-			'rewrite' => array('slug' => 'lessons'),
-			'supports' => array(
-				'title', 
-				'editor', 
-				'excerpt', 
-				'custom-fields', 
-				'thumbnail',
-				'page-attributes'
-			),
-			'taxonomies' => array( 'post_tag', 'category'),
-		);
-		register_post_type('lesson',$args);
-	}
-	add_action('init' , 'add_custom_post_type');
+	// 	$args = array(
+	// 		'labels' => $labels,
+	// 		'has_archive' => true,
+	// 		'public' => true,
+	// 		'hierarchical' => false,
+	// 		'rewrite' => array('slug' => 'lessons'),
+	// 		'supports' => array(
+	// 			'title', 
+	// 			'editor', 
+	// 			'excerpt', 
+	// 			'custom-fields', 
+	// 			'thumbnail',
+	// 			'page-attributes'
+	// 		),
+	// 		'taxonomies' => array( 'post_tag', 'category'),
+	// 	);
+	// 	register_post_type('lesson',$args);
+	// }
+	// add_action('init' , 'add_custom_post_type');
 ?>
